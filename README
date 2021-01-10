@@ -1,0 +1,10 @@
+URL endpoint calls are to here.
+
+Increments the number of viewers.
+http://fasterthanfire.leviballing.com/church/api.php?viewers=4
+
+To get a sum of the viewers
+http://fasterthanfire.leviballing.com/church/sum.php
+
+To clear the number of viewers
+http://fasterthanfire.leviballing.com/church/clear.php

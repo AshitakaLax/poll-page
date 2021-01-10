@@ -1,0 +1,25 @@
+<div class="content">
+<mat-card class="example-card">
+  <mat-card-header >
+    <mat-card-title style="text-align: center;">Welcome to the <b>Green Canyon Ward</b> Sacrament meeting broadcast!</mat-card-title>
+    <mat-card-subtitle style="text-align: center;">Please select the number of people watching this broadcast in your home.</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <div class="example-button-row">
+      <mat-grid-list cols="3" rowHeight="3:1">
+        <mat-grid-tile *ngFor="let viewer of viewerList">
+          <button mat-raised-button style="height: 75%;width:75%;text-align: center;" color="primary" (click)=onClick(viewer)>{{viewer}}</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <div style="justify-content: center;">
+      <button mat-raised-button style="height:3.9em; width:100%;text-align: center;" color="primary" (click)=onClick(0)>0</button>
+    </div>
+  </mat-card-content>
+  <mat-card-footer style="text-align: center;">
+    Once selected you will be directed to the broadcast. Thanks!
+  </mat-card-footer>
+</mat-card>
+
+</div>
+

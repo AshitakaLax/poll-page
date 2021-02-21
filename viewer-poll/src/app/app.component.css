@@ -1,6 +1,7 @@
 
 .example-card {
   max-width: 75%;
+  margin: 1rem;
 }
 
 .content{
@@ -8,4 +9,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sacrament-color{
+  background-color: #04d600;
+  color: #000;
+}
+
+.sunday-school-color{
+  background-color: #f9fb6f;
+  color: #000;
+}
+
+.elder-quorum-color{
+  background-color: #aab4fd;
+  color: #000;
+}
+.relief-society-color{
+  background-color: #ed90f4;
+  color: #000;
 }

@@ -1,25 +1,148 @@
-<div class="content">
-<mat-card class="example-card">
-  <mat-card-header >
-    <mat-card-title style="text-align: center;">Welcome to the <b>Green Canyon Ward</b> Sacrament meeting broadcast!</mat-card-title>
-    <mat-card-subtitle style="text-align: center;">Please select the number of people watching this broadcast in your home.</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <div class="example-button-row">
-      <mat-grid-list cols="3" rowHeight="3:1">
-        <mat-grid-tile *ngFor="let viewer of viewerList">
-          <button mat-raised-button style="height: 75%;width:75%;text-align: center;" color="primary" (click)=onClick(viewer)>{{viewer}}</button>
-        </mat-grid-tile>
-      </mat-grid-list>
-    </div>
-    <div style="justify-content: center;">
-      <button mat-raised-button style="height:3.9em; width:100%;text-align: center;" color="primary" (click)=onClick(0)>0</button>
-    </div>
-  </mat-card-content>
-  <mat-card-footer style="text-align: center;">
-    Once selected you will be directed to the broadcast. Thanks!
-  </mat-card-footer>
-</mat-card>
+<div class="content" fxLayout="column" fxLayoutAlign="space-between">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >Children and Youth Night
+      </mat-card-title>
+      <mat-card-subtitle style="text-align: center"
+        >Young Men, Young Women, their parents and leaders.</mat-card-subtitle
+      >
+    </mat-card-header>
+    <a href="https://youtu.be/PBK4qAfOJbw">
+      <img
+        mat-card-image
+        src="assets/img/childrenAndYouth.jpg"
+        alt="Photo of ChildrenAndYouth"
+      />
+    </a>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            type="button"
+            class="sunday-school-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            href="https://youtu.be/PBK4qAfOJbw"
+          >
+            Click Here to Watch the Children and Youth
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
 
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >Welcome to the <b>Green Canyon Ward</b> Sacrament meeting
+        broadcast!</mat-card-title
+      >
+      <mat-card-subtitle style="text-align: center"
+        >Please select the number of people watching this broadcast in your
+        home.</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <div class="example-button-row">
+        <mat-grid-list cols="3" rowHeight="3:1">
+          <mat-grid-tile *ngFor="let viewer of viewerList">
+            <button
+              class="sacrament-color"
+              mat-raised-button
+              style="height: 75%; width: 75%; text-align: center"
+              color="primary"
+              (click)="onClick(viewer)"
+            >
+              {{ viewer }}
+            </button>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+      <div style="justify-content: center">
+        <button
+          mat-raised-button
+          class="sacrament-color"
+          style="height: 3.9em; width: 100%; text-align: center"
+          color="primary"
+          (click)="onClick(0)"
+        >
+          0
+        </button>
+      </div>
+    </mat-card-content>
+    <mat-card-footer style="text-align: center">
+      Once selected you will be directed to the broadcast. Thanks!
+    </mat-card-footer>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >Sunday School Zoom Meeting</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            class="sunday-school-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            (click)="onSundaySchoolClick()"
+          >
+            Click Here to Join Sunday School
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >Elder's Quorum Zoom Meeting</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            class="elder-quorum-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            (click)="onElderQuorumClick()"
+          >
+            Click Here to Join Elder's Quorum
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >Relief Society's Zoom Meeting</mat-card-title
+      >
+    </mat-card-header>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            class="relief-society-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            (click)="onReliefSocietyClick()"
+          >
+            Click Here to Join Relief Society
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
 </div>
-

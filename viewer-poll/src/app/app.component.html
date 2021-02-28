@@ -2,40 +2,6 @@
   <mat-card class="example-card">
     <mat-card-header>
       <mat-card-title style="text-align: center"
-        >Children and Youth Night
-      </mat-card-title>
-      <mat-card-subtitle style="text-align: center"
-        >Young Men, Young Women, their parents and leaders.</mat-card-subtitle
-      >
-    </mat-card-header>
-    <a href="https://youtu.be/PBK4qAfOJbw">
-      <img
-        mat-card-image
-        src="assets/img/childrenAndYouth.jpg"
-        alt="Photo of ChildrenAndYouth"
-      />
-    </a>
-    <mat-card-content>
-      <div class="example-button-row">
-        <div style="justify-content: center">
-          <button
-            mat-raised-button
-            type="button"
-            class="sunday-school-color"
-            style="height: 3.9em; width: 100%; text-align: center"
-            color="primary"
-            href="https://youtu.be/PBK4qAfOJbw"
-          >
-            Click Here to Watch the Children and Youth
-          </button>
-        </div>
-      </div>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <mat-card-header>
-      <mat-card-title style="text-align: center"
         >Welcome to the <b>Green Canyon Ward</b> Sacrament meeting
         broadcast!</mat-card-title
       >
@@ -140,6 +106,75 @@
             (click)="onReliefSocietyClick()"
           >
             Click Here to Join Relief Society
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <h1>Up Coming Stake Meetings</h1>
+  <mat-card class="example-card" *ngIf="true">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >North Logan Stake Conference
+      </mat-card-title>
+      <mat-card-subtitle style="text-align: center"
+        >Come what March 17th, 9am-10:15am via Zoom.</mat-card-subtitle
+      >
+    </mat-card-header>
+    <a href="https://zoom.us/j/95987563835">
+      <img
+        mat-card-image
+        src="assets/img/stake-conference.jpg"
+        alt="Stake Conference"
+      />
+    </a>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            type="button"
+            class="sunday-school-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            href="https://zoom.us/j/95987563835"
+          >
+            Click Here to Join Stake Conference
+          </button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card" *ngIf="true">
+    <mat-card-header>
+      <mat-card-title style="text-align: center"
+        >North Logan Stake Special Youth Session
+      </mat-card-title>
+      <mat-card-subtitle style="text-align: center"
+        >All young men and young women and their leaders, Come what March 17th, 12pm via Zoom.</mat-card-subtitle
+      >
+    </mat-card-header>
+    <a href="https://zoom.us/j/95987563835">
+      <img
+        mat-card-image
+        src="assets/img/childrenAndYouth.jpg"
+        alt="Stake Conference"
+      />
+    </a>
+    <mat-card-content>
+      <div class="example-button-row">
+        <div style="justify-content: center">
+          <button
+            mat-raised-button
+            type="button"
+            class="sunday-school-color"
+            style="height: 3.9em; width: 100%; text-align: center"
+            color="primary"
+            href="https://zoom.us/j/95987563835"
+          >
+            Click Here to Join Stake Special Youth Session
           </button>
         </div>
       </div>
